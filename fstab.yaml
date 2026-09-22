@@ -1,0 +1,5 @@
+mountpoints:
+  /:
+    url: "https://author-p208666-e2179906.adobeaemcloud.com/bin/franklin.delivery/nshahwan/taqa-ue/main"
+    type: "markup"
+    suffix: ".html"
