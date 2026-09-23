@@ -1,0 +1,33 @@
+{
+  "version": 9,
+  "code": {
+    "owner": "nshahwan",
+    "repo": "taqa-ue",
+    "source": {
+      "type": "github",
+      "url": "https://github.com/nshahwan/taqa-ue"
+    }
+  },
+  "content": {
+    "source": {
+      "type": "markup",
+      "url": "https://author-p208666-e2179906.adobeaemcloud.com/bin/franklin.delivery/nshahwan/taqa-ue/main"
+    },
+    "contentBusId": "12af1846ec0306ab142f7353f2cca1c55d1e4427322e71ba7970d213669"
+  },
+  "lastModified": "2026-09-23T18:29:10.155Z",
+  "created": "2026-09-22T13:39:21.777Z",
+  "apiKeys": {},
+  "access": {
+    "admin": {
+      "role": {
+        "admin": [
+          "nshahwan@adobe.com",
+          "045F81C36A4CDE660A495EF2@techacct.adobe.com",
+          "waring@adobe.com"
+        ]
+      },
+      "requireAuth": "auto"
+    }
+  }
+}

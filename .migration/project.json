@@ -5,7 +5,11 @@
       "previewOrg": "nshahwan",
       "previewSite": "taqa-ue",
       "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
-      "baseUrl": "https://taqadistribution.com/addc/en-us/residential/help-and-support/certificates"
+      "baseUrl": "https://taqadistribution.com/addc/en-us/residential/help-and-support/certificates",
+      "aemSitePath": "/content/taqa-ue/en/help-and-support/certificates",
+      "aemAssetsFolderPath": "/content/dam/taqa-ue/en/help-and-support/certificates",
+      "aemSiteName": "certificates",
+      "aemSiteTitle": "certificates"
     }
   }
 }

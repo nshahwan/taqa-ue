@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 401 
+www-authenticate: Basic realm="Sling (Development)"
+accept-ranges: bytes
+date: Wed, 23 Sep 2026 16:24:44 GMT
+strict-transport-security: max-age=31557600
+set-cookie: affinity="6511d0b149aaa55a"; Path=/; HttpOnly; secure
+x-served-by: cache-iad-khef600026-IAD
+x-cache: MISS
+x-timer: S1790180684.175381,VS0,VS0,VE345
+

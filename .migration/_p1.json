@@ -1,0 +1,27 @@
+{
+  "webPath": "/help-and-support/certificates",
+  "resourcePath": "/help-and-support/certificates.md",
+  "preview": {
+    "url": "https://main--taqa-ue--nshahwan.aem.page/help-and-support/certificates",
+    "status": 200,
+    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/preview/help-and-support/certificates.md",
+    "contentType": "text/plain; charset=utf-8",
+    "lastModified": "Wed, 23 Sep 2026 16:23:30 GMT",
+    "sourceLocation": "markup:https://author-p208666-e2179906.adobeaemcloud.com/ui/help-and-support/certificates#/aem/sites.html/content",
+    "sourceLastModified": "Wed, 23 Sep 2026 16:10:50 GMT",
+    "lastModifiedBy": "nshahwan@adobe.com",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "list",
+      "read",
+      "write"
+    ]
+  },
+  "links": {
+    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/help-and-support/certificates"
+  }
+}

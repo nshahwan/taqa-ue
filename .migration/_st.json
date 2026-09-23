@@ -1,10 +1,10 @@
 {
-  "webPath": "/help-and-support/transfer",
-  "resourcePath": "/help-and-support/transfer.md",
+  "webPath": "/help-and-support/certificates",
+  "resourcePath": "/help-and-support/certificates.md",
   "live": {
-    "url": "https://main--taqa-ue--nshahwan.aem.live/help-and-support/transfer",
+    "url": "https://main--taqa-ue--nshahwan.aem.live/help-and-support/certificates",
     "status": 404,
-    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/live/help-and-support/transfer.md",
+    "contentBusId": "helix-content-bus/12af1846ec0306ab142f7353f2cca1c55d1e4427322e71ba7970d213669/live/help-and-support/certificates.md",
     "permissions": [
       "delete",
       "delete-forced",
@@ -14,14 +14,9 @@
     ]
   },
   "preview": {
-    "url": "https://main--taqa-ue--nshahwan.aem.page/help-and-support/transfer",
-    "status": 200,
-    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/preview/help-and-support/transfer.md",
-    "contentType": "text/plain; charset=utf-8",
-    "lastModified": "Wed, 23 Sep 2026 15:54:33 GMT",
-    "sourceLocation": "markup:https://author-p208666-e2179906.adobeaemcloud.com/ui/help-and-support/transfer#/aem/sites.html/content",
-    "sourceLastModified": "Wed, 23 Sep 2026 15:40:48 GMT",
-    "lastModifiedBy": "nshahwan@adobe.com",
+    "url": "https://main--taqa-ue--nshahwan.aem.page/help-and-support/certificates",
+    "status": 404,
+    "contentBusId": "helix-content-bus/12af1846ec0306ab142f7353f2cca1c55d1e4427322e71ba7970d213669/preview/help-and-support/certificates.md",
     "permissions": [
       "delete",
       "delete-forced",
@@ -33,7 +28,7 @@
   "edit": {},
   "code": {
     "status": 404,
-    "codeBusId": "helix-code-bus/nshahwan/taqa-ue/main/help-and-support/transfer",
+    "codeBusId": "helix-code-bus/nshahwan/taqa-ue/main/help-and-support/certificates",
     "permissions": [
       "delete",
       "delete-forced",
@@ -42,10 +37,10 @@
     ]
   },
   "links": {
-    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/help-and-support/transfer",
-    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/help-and-support/transfer",
-    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/help-and-support/transfer",
-    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/help-and-support/transfer",
+    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/help-and-support/certificates",
     "logout": "https://admin.hlx.page/logout/nshahwan/taqa-ue/main"
   },
   "profile": {
@@ -58,7 +53,7 @@
     "expires_in": "86400000",
     "scope": "ab.manage,AdobeID,gnav,openid,org.read,read_organizations,session,aem.frontend.all,additional_info.ownerOrg,additional_info.projectedProductContext,account_cluster.read",
     "created_at": "1790169567758",
-    "ttl": 76404,
+    "ttl": 65720,
     "ownerOrg": "25D23BAA5E3AB7DB0A495EAC@AdobeOrg",
     "email": "nshahwan@adobe.com"
   }
