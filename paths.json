@@ -1,7 +1,5 @@
 {
   "mappings": [
-    "/content/taqa-ue/en/help-and-support/transfer:/help-and-support/transfer",
-    "/content/taqa-ue/en/help-and-support/certificates:/help-and-support/certificates",
     "/content/taqa-ue/language-masters/en:/",
     "/content/taqa-ue/language-masters/en/:/en/",
     "/content/taqa-ue/language-masters/fr/:/fr/",
@@ -12,6 +10,7 @@
     "/content/taqa-ue/language-masters/ja:/ja",
     "/content/taqa-ue/language-masters/de/:/de/",
     "/content/taqa-ue/language-masters/de:/de",
+    "/content/taqa-ue/en/help-and-support/transfer:/help-and-support/transfer",
     "/content/taqa-ue/configuration:/.helix/config.json",
     "/content/taqa-ue/metadata:/metadata.json",
     "/content/taqa-ue/redirects:/redirects.json",
