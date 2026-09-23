@@ -17,13 +17,43 @@
       "columns",
       "fragment",
       "form",
-      "embed-adaptive-form"
+      "embed-adaptive-form",
+      "hero-banner",
+      "hero-app-promo",
+      "cards-solutions",
+      "cards-support",
+      "carousel-tips",
+      "accordion-faq"
+    ]
+  },
+  {
+    "id": "accordion-faq",
+    "components": [
+      "accordion-faq-item"
+    ]
+  },
+  {
+    "id": "cards-solutions",
+    "components": [
+      "cards-solutions-card"
+    ]
+  },
+  {
+    "id": "cards-support",
+    "components": [
+      "cards-support-card"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel-tips",
+    "components": [
+      "carousel-tips-item"
     ]
   },
   {

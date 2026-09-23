@@ -52,7 +52,13 @@
         "columns",
         "fragment",
         "form",
-        "embed-adaptive-form"
+        "embed-adaptive-form",
+        "hero-banner",
+        "hero-app-promo",
+        "cards-solutions",
+        "cards-support",
+        "carousel-tips",
+        "accordion-faq"
       ]
     }
   ]

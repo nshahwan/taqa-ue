@@ -1,0 +1,165 @@
+/*
+ * Accordion FAQ Block
+ * Collapsible question/answer list.
+ * Design migrated from taqadistribution.com FAQ section.
+ */
+
+.accordion-faq {
+    max-width: 740px;
+}
+
+/* --- Category filter pills --- */
+.accordion-faq .accordion-faq-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.accordion-faq .accordion-faq-filter {
+    margin: 0;
+    padding: 12px 24px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50px;
+    background: transparent;
+    color: var(--text-color);
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.accordion-faq .accordion-faq-filter:hover,
+.accordion-faq .accordion-faq-filter:focus-visible {
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+.accordion-faq .accordion-faq-filter.active {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: #fff;
+}
+
+/* Hidden items (filtered out or beyond the current page) */
+.accordion-faq .accordion-faq-item[hidden] {
+    display: none;
+}
+
+/* --- Load more button --- */
+.accordion-faq .accordion-faq-loadmore {
+    display: block;
+    margin: 40px auto 0;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--brand-primary);
+    color: #fff;
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.accordion-faq .accordion-faq-loadmore:hover,
+.accordion-faq .accordion-faq-loadmore:focus-visible {
+    background-color: var(--brand-navy);
+}
+
+.accordion-faq .accordion-faq-loadmore[hidden] {
+    display: none;
+}
+
+/* --- Accordion item (details) --- */
+.accordion-faq .accordion-faq-item {
+    border-bottom: 1px solid var(--faq-border-color);
+}
+
+.accordion-faq .accordion-faq-item:first-child {
+    border-top: 1px solid var(--faq-border-color);
+}
+
+.accordion-faq .accordion-faq-item[open] {
+    background-color: #f7f7f7;
+}
+
+/* --- Question header (summary) --- */
+.accordion-faq .accordion-faq-item summary {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+    padding-right: 52px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion-faq .accordion-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-faq .accordion-faq-item summary p {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    color: var(--brand-muted);
+    text-transform: none;
+}
+
+/* --- Toggle glyph (+ / −) --- */
+.accordion-faq .accordion-faq-item summary::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+}
+
+.accordion-faq .accordion-faq-item[open] summary::after {
+    content: '\2212';
+}
+
+/* --- Answer body --- */
+.accordion-faq .accordion-faq-item-body {
+    padding: 0 30px 50px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.accordion-faq .accordion-faq-item-body p {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.accordion-faq .accordion-faq-item-body p + p {
+    margin-top: 14px;
+}
+
+.accordion-faq .accordion-faq-item-body a:any-link {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.accordion-faq .accordion-faq-item:not([open]) .accordion-faq-item-body {
+    display: none;
+}

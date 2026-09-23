@@ -1,0 +1,10 @@
+{
+  "variantName": "carousel-tips",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Rotating tips gallery on a light/mint panel; each slide has an illustration image, a title, a short description, and a LEARN MORE CTA, with dot indicators and prev/next controls.",
+  "contentPattern": "Repeating slide items, each with an image and a content cell (title + text + link).",
+  "usage": "Energy-saving tips carousel.",
+  "options": [],
+  "memberVariantIds": ["carousel-tips"]
+}

@@ -1,0 +1,104 @@
+/* Block: hero-banner — full-width diagonal banner photo + page-intro text.
+   Structural/brand CSS extracted from taqadistribution.com computed styles.
+   The diagonal clip and gradient wedges are baked into the source image asset,
+   so no clip-path is applied here. */
+
+/* Full-bleed: escape the section's 1200px content cap and side padding. */
+.hero-banner-container .hero-banner-wrapper {
+    max-width: unset;
+    padding: 0;
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Banner photograph spans the full viewport width. */
+.hero-banner .hero-banner-media,
+.hero-banner .hero-banner-media picture {
+    display: block;
+    width: 100%;
+}
+
+.hero-banner .hero-banner-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Intro text region — mobile-first. The inner content area (max-width minus the
+   side padding) is a 1200px centered box, so the text's left edge lands at the
+   same x-position as the section below (whose content also caps at 1200px). The
+   banner image above stays full-bleed. */
+.hero-banner .hero-banner-body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: calc(1200px + 48px); /* 1200 content + 2 x 24px mobile padding */
+    margin: 0 auto;
+    padding: 60px 24px 0;
+}
+
+/* Page title. */
+.hero-banner .hero-banner-body h1 {
+    margin: 0 0 10px;
+    color: var(--text-color);
+    font-family: var(--heading-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 32.4px;
+    text-transform: uppercase;
+}
+
+/* Intro paragraph (paragraph following the title). */
+.hero-banner .hero-banner-body h1 + p {
+    margin: 20px 0 0;
+    color: var(--text-color);
+    font-family: var(--body-font-family);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+}
+
+/* Eyebrow (first paragraph) — teal caption. */
+.hero-banner .hero-banner-body > p:first-child {
+    margin: 0 0 32px;
+    color: var(--brand-primary);
+    font-family: var(--body-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+}
+
+@media (width >= 900px) {
+    /* Side padding matches the section content box (0 32px) so the text
+       aligns with the section below at desktop widths. max-width grows by the
+       same 2 x 32px so the inner content area stays a 1200px centered box. */
+    .hero-banner .hero-banner-body {
+        max-width: calc(1200px + 64px);
+        padding: 80px 32px 50px;
+    }
+
+    .hero-banner .hero-banner-body h1 {
+        margin: 0 0 10px;
+        font-size: 80px;
+        line-height: 68px;
+    }
+
+    .hero-banner .hero-banner-body h1 + p {
+        margin: 10px 0 0;
+        max-width: 750px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .hero-banner .hero-banner-body > p:first-child {
+        margin: 0 0 32px;
+        font-size: 16px;
+        line-height: 19.2px;
+        letter-spacing: 0.96px;
+    }
+}
