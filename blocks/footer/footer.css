@@ -1,20 +1,204 @@
+/* Block: footer
+ * TAQA Distribution site footer — light band with three rows:
+ *   1. "Download our apps" + app-store badges
+ *   2. brand logos
+ *   3. "Follow us" social icons + legal links + copyright
+ * Values mirror the source (taqadistribution.com). The whole footer is centered
+ * to the same 1200px content width as the page sections above it.
+ */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size-s);
+    border-top: 1px solid #e5e7eb;
 }
 
 footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 24px 24px;
 }
 
 footer .footer p {
-  margin: 0;
+    margin: 0;
 }
 
+/* Shared small-caps heading ("Download our apps", "Follow us") */
+footer .footer .footer-heading {
+    margin: 0 0 12px;
+    font-family: var(--heading-font-family);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--brand-navy);
+}
+
+/* Band 1 — download our apps */
+footer .footer .footer-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+footer .footer .footer-badges {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .footer .footer-badges a {
+    display: inline-block;
+    line-height: 0;
+}
+
+footer .footer .footer-badges img {
+    height: 40px;
+    width: auto;
+}
+
+/* Band 2 — brand logos: full-bleed two-zone band (white left / gradient right).
+   The wrapper below still lives inside the 1200px container, so pull it out to
+   the full viewport width and reset padding. */
+footer .footer .footer-logos {
+    display: flex;
+    align-items: stretch;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 32px 0 32px calc(50% - 50vw);
+    min-height: 180px;
+}
+
+/* White zone (~20%) holds the teal "A TAQA GROUP COMPANY" mark, right-aligned
+   so it sits just left of the gradient edge. */
+footer .footer .footer-logo-group {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24px 32px;
+    box-sizing: border-box;
+}
+
+footer .footer .footer-logo-group img {
+    height: 100px;
+    width: auto;
+}
+
+/* Gradient zone (~80%) holds the white "TAQA Distribution" wordmark, aligned
+   right to mirror the source. */
+footer .footer .footer-logo-wordmark {
+    flex: 1 1 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 24px 70px;
+    box-sizing: border-box;
+    background-image: linear-gradient(91.9deg, rgb(154 208 113) 5.1%, rgb(10 179 161) 49.24%);
+}
+
+footer .footer .footer-logo-wordmark img {
+    height: 100px;
+    width: auto;
+}
+
+/* Band 3 — follow us + legal + copyright */
+footer .footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+footer .footer .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .footer .footer-social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+footer .footer .footer-social-icons a {
+    display: inline-flex;
+    line-height: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .footer-social-icons a:hover {
+    transform: translateY(-2px);
+}
+
+footer .footer .footer-social-icons svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+/* Legal links row */
+footer .footer .footer-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .footer .footer-legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 24px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .footer-legal-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .footer .footer-legal-links a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+footer .footer .footer-copyright {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* Desktop — spread the social row and legal links onto one line */
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+    footer .footer > div {
+        padding: 48px 32px 24px;
+    }
+
+    footer .footer .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer .footer .footer-social {
+        align-items: flex-start;
+    }
+
+    footer .footer .footer-legal {
+        align-items: flex-end;
+    }
+
+    footer .footer .footer-legal-links {
+        justify-content: flex-end;
+    }
 }
