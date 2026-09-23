@@ -11,6 +11,7 @@
     "/content/taqa-ue/language-masters/de/:/de/",
     "/content/taqa-ue/language-masters/de:/de",
     "/content/taqa-ue/en/help-and-support/transfer:/help-and-support/transfer",
+    "/content/taqa-ue/en/help-and-support/certificates:/help-and-support/certificates",
     "/content/taqa-ue/configuration:/.helix/config.json",
     "/content/taqa-ue/metadata:/metadata.json",
     "/content/taqa-ue/redirects:/redirects.json",
