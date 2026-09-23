@@ -1,0 +1,86 @@
+/* Block: cards-solutions — light link cards in a responsive grid.
+ * Values extracted from source computed styles at
+ * https://taqadistribution.com/.../certificates
+ * Card: bg #fafafa, 2px border rgb(172 174 185 / 20%), radius 12px,
+ * padding 20px 20px 15px; title Roboto medium 16px/22.4px #1a1a1d;
+ * corner arrow affordance rendered in brand teal.
+ */
+
+.cards-solutions > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.cards-solutions > ul > li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 137px;
+    padding: 20px 20px 15px;
+    background-color: var(--card-bg);
+    border: 2px solid var(--card-border-color);
+    border-radius: var(--card-radius);
+}
+
+/* the empty image cell (no picture authored) collapses away */
+.cards-solutions .cards-solutions-card-body:empty {
+    display: none;
+}
+
+/* reset EDS button auto-decoration back to a plain title link */
+.cards-solutions .cards-solutions-card-body .button-container {
+    margin: 0;
+}
+
+main .cards-solutions a.button:any-link {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0 32px 0 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--text-color);
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    text-transform: none;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+main .cards-solutions a.button:hover,
+main .cards-solutions a.button:focus {
+    background-color: transparent;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* corner arrow affordance in brand teal, pinned bottom-right */
+.cards-solutions .cards-solutions-card-body .button-container::after {
+    content: '\2192';
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--brand-primary);
+}
+
+@media (width >= 900px) {
+    .cards-solutions > ul {
+        grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    }
+
+    .cards-solutions > ul > li {
+        min-height: 160px;
+    }
+}

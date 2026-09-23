@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-width banner photograph across the top of the page, followed by a light page-intro region with an eyebrow label, a large H1 title, and a supporting intro paragraph. No text overlay on the image.",
+  "contentPattern": "Row 1: banner image (with optional alt). Row 2: rich text containing eyebrow, H1 title, and intro paragraph.",
+  "usage": "Page-intro banner used at the top of help-and-support pages.",
+  "options": [],
+  "memberVariantIds": ["hero-banner"]
+}

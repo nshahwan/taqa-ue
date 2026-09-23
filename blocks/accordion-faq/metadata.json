@@ -1,0 +1,10 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Expandable question/answer list; each row shows a question with a '+' toggle that expands to reveal the answer, with a thin divider between items.",
+  "contentPattern": "Repeating items, each with a question (summary) cell and an answer (rich text) cell.",
+  "usage": "FAQ / help question-and-answer list.",
+  "options": [],
+  "memberVariantIds": ["accordion-faq"]
+}

@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "help-and-support",
+      "urls": [
+        "https://taqadistribution.com/addc/en-us/residential/help-and-support/certificates"
+      ],
+      "representativeUrl": "https://taqadistribution.com/addc/en-us/residential/help-and-support/certificates",
+      "description": "Help & Support page: page-intro hero, solution link cards, app-promo + energy-tips carousel, FAQ accordion, and customer support cards.",
+      "urlPattern": "/addc/en-us/residential/help-and-support/*",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": [".headerFrame_herosection__gGU27"]
+        },
+        {
+          "name": "cards-solutions",
+          "instances": [".customCarousel_carousel__RG2l3", ".findYourSolutionCard_container__RLvzQ"]
+        },
+        {
+          "name": "hero-app-promo",
+          "instances": [".solutionsCarousel_appsectioncontainer__WLOtL"]
+        },
+        {
+          "name": "carousel-tips",
+          "instances": [".tipsCarousel_carousel__xtuBU", ".solutionsCarousel_tips__w2nPQ"]
+        },
+        {
+          "name": "accordion-faq",
+          "instances": [".faqsection_faqContainer__LM9T0"]
+        },
+        {
+          "name": "cards-support",
+          "instances": [".customerSupport_subContainer__7YEhA"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc2",
+          "name": "hero",
+          "selector": [".headerFrame_herosection__gGU27"],
+          "style": null,
+          "blocks": ["hero-banner"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc3",
+          "name": "find-your-solution",
+          "selector": [".customCarousel_container__sxi1j"],
+          "style": null,
+          "blocks": ["cards-solutions"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc4",
+          "name": "app-promo-and-tips",
+          "selector": [".solutionsCarousel_appsectioncontainer__WLOtL"],
+          "style": null,
+          "blocks": ["hero-app-promo", "carousel-tips"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "faq",
+          "selector": [".faqPanel_container__Tce5m"],
+          "style": null,
+          "blocks": ["accordion-faq"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc6",
+          "name": "customer-support",
+          "selector": [".customerSupport_container__Nzg04"],
+          "style": "dark",
+          "blocks": ["cards-support"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

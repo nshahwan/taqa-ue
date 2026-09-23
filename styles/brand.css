@@ -1,0 +1,48 @@
+/*
+ * brand.css — TAQA Distribution design tokens
+ * Extracted from taqadistribution.com
+ * Heading font "Grold" is proprietary; Montserrat is the closest free fallback.
+ */
+
+:root {
+    /* fonts */
+    --heading-font-family: "Montserrat", "Grold", sans-serif;
+    --body-font-family: "Roboto", sans-serif;
+
+    /* brand colors */
+    --background-color: #fff;
+    --text-color: #1a1a1d;
+    --brand-primary: #0ab3a1;
+    --brand-navy: #40476f;
+    --brand-support-dark: #00093f;
+    --brand-muted: #757791;
+    --link-color: #40476f;
+    --link-hover-color: #0ab3a1;
+
+    /* surfaces */
+    --card-bg: #fafafa;
+    --card-border-color: rgb(172 174 185 / 20%);
+    --faq-border-color: #d3d3d3;
+    --tips-mint-bg: rgb(157 225 217 / 20%);
+
+    /* gradients */
+    --app-promo-gradient: linear-gradient(217.14deg, #9ad071 -2.05%, #0ab2a1 68.29%);
+
+    /* buttons */
+    --button-bg: #0ab3a1;
+    --button-color: #fff;
+    --button-radius: 70px;
+
+    /* spacing */
+    --section-padding: 48px;
+    --nav-height: 60px;
+    --card-radius: 12px;
+
+    /* heading sizes (desktop) */
+    --heading-size-xxl: 36px;
+    --heading-size-xl: 36px;
+    --heading-size-l: 28px;
+    --heading-size-m: 26px;
+    --heading-size-s: 22px;
+    --heading-size-xs: 18px;
+}

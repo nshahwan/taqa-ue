@@ -1,0 +1,174 @@
+/* Block: carousel-tips — values extracted from source computed styles */
+
+/* Mint panel — fills its column (equal height with the app-promo panel beside
+   it), content vertically centered. Caps width on mobile / when standalone. */
+.carousel-tips {
+    box-sizing: border-box;
+    max-width: 460px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--tips-mint-bg);
+    text-align: center;
+}
+
+/* In the 2-column app-promo band, the panel fills the full column width. */
+main > .section.hero-app-promo-container.carousel-tips-container .carousel-tips {
+    max-width: none;
+}
+
+/* "ENERGY SAVING TIPS" eyebrow label — teal, uppercase (source computed values). */
+.carousel-tips .carousel-tips-header {
+    margin: 0 0 24px;
+    color: var(--brand-primary);
+    font-family: var(--body-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+}
+
+.carousel-tips .carousel-tips-slides-container {
+    position: relative;
+}
+
+.carousel-tips .carousel-tips-slides,
+.carousel-tips .carousel-tips-slide-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-tips .carousel-tips-slides {
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow: scroll clip;
+}
+
+.carousel-tips .carousel-tips-slides::-webkit-scrollbar {
+    display: none;
+}
+
+/* Slide — centered column: image, title, description, button */
+.carousel-tips .carousel-tips-slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Illustration image */
+.carousel-tips .carousel-tips-slide-image {
+    line-height: 0;
+}
+
+.carousel-tips .carousel-tips-slide-image p {
+    margin: 0;
+    line-height: 0;
+}
+
+.carousel-tips .carousel-tips-slide-image img {
+    width: 120px;
+    height: 120px;
+    margin: 30px 0;
+    object-fit: contain;
+}
+
+/* Text content */
+.carousel-tips .carousel-tips-slide-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+.carousel-tips .carousel-tips-slide-content p:first-child {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+/* Description */
+.carousel-tips .carousel-tips-slide-content p:nth-child(2) {
+    margin: 8px 0 0;
+    font-family: var(--body-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* LEARN MORE pill button */
+.carousel-tips .carousel-tips-slide-content .button-container {
+    margin: 0;
+}
+
+.carousel-tips a.button:any-link {
+    margin: 24px 0 0;
+    padding: 15px 25px;
+    border: 1px solid var(--button-bg);
+    border-radius: 80px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    font-family: var(--body-font-family);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.carousel-tips a.button:hover,
+.carousel-tips a.button:focus {
+    background-color: var(--brand-navy);
+    border-color: var(--brand-navy);
+    color: #fff;
+}
+
+/* Dot indicators */
+.carousel-tips .carousel-tips-slide-indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 0;
+    line-height: 0;
+}
+
+.carousel-tips .carousel-tips-slide-indicator button {
+    width: 6px;
+    height: 6px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--brand-muted);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.carousel-tips .carousel-tips-slide-indicator button:disabled,
+.carousel-tips .carousel-tips-slide-indicator button:hover,
+.carousel-tips .carousel-tips-slide-indicator button:focus-visible {
+    background-color: var(--text-color);
+}
+
+/* Source shows no prev/next arrows — dots only */
+.carousel-tips .carousel-tips-navigation-buttons {
+    display: none;
+}

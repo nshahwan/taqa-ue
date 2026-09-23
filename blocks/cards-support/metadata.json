@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-support",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "A row of uniform contact-option cards on a dark navy background; each card centers an icon above a bold title, a short description, and a link.",
+  "contentPattern": "Repeating card items, each with an icon cell and a body cell (title + text + link).",
+  "usage": "Customer-support contact options (chat, video, call, find a location).",
+  "options": [],
+  "memberVariantIds": ["cards-support"]
+}

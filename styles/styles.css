@@ -10,34 +10,34 @@
  * governing permissions and limitations under the License.
  */
 
+@import url('brand.css');
+
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --background-color: #fff;
+  --light-color: #f5f7f7;
+  --dark-color: var(--brand-support-dark);
+  --text-color: #1a1a1d;
+  --link-color: #40476f;
+  --link-hover-color: #0ab3a1;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts — heading/body families are defined in brand.css */
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 28px;
+  --heading-font-size-m: 24px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 60px;
 }
 
 /* fallback fonts */
@@ -56,16 +56,16 @@
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-m: 16px;
+    --body-font-size-s: 14px;
+    --body-font-size-xs: 12px;
 
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
+    --heading-font-size-xxl: 36px;
     --heading-font-size-xl: 36px;
     --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
+    --heading-font-size-m: 26px;
+    --heading-font-size-s: 22px;
     --heading-font-size-xs: 18px;
   }
 }
@@ -108,14 +108,22 @@ h6 {
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
   font-weight: 600;
-  line-height: 1.25;
+  line-height: 1.2;
+  text-transform: uppercase;
   scroll-margin: 40px;
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
 h2 { font-size: var(--heading-font-size-xl); }
 h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
+
+/* section eyebrow / accent headings (h4) use the brand teal */
+h4 {
+  font-size: var(--heading-font-size-m);
+  color: var(--brand-primary);
+  letter-spacing: 0.02em;
+}
+
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
@@ -173,16 +181,16 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: var(--button-radius);
+  padding: 12px 24px;
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--button-bg);
+  color: var(--button-color);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -193,7 +201,8 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--brand-navy);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -206,8 +215,14 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border: 2px solid var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--brand-primary);
+  color: #fff;
 }
 
 main img {
@@ -254,4 +269,143 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.dark {
+  background-color: var(--brand-support-dark);
+  color: #fff;
+  margin: 0;
+  padding: 48px 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6 {
+  color: #fff;
+}
+
+main .section.dark a:any-link {
+  color: #fff;
+}
+
+/* App-promo + energy-tips: two-column band (gradient promo left, mint tips right).
+   The regroup transformer places both block wrappers in this one section, which
+   carries both container classes. Matches the source: a full-bleed band with
+   ~70px side insets, a ~67:33 promo:tips split, and a 20px gap; both panels are
+   equal height. */
+main > .section.hero-app-promo-container.carousel-tips-container {
+  margin: 0;
+}
+
+main > .section.hero-app-promo-container.carousel-tips-container > div {
+  max-width: none;
+  padding: 0;
+}
+
+@media (width >= 900px) {
+  main > .section.hero-app-promo-container.carousel-tips-container {
+    display: grid;
+
+    /* minmax(0, …) stops the image's intrinsic width and the carousel's scroll
+       content from blowing the columns past the intended 67:33 ratio. */
+    grid-template-columns: minmax(0, 67fr) minmax(0, 33fr);
+    gap: 20px;
+    align-items: stretch;
+    padding: 0 70px;
+  }
+
+  main > .section.hero-app-promo-container.carousel-tips-container > div {
+    margin: 0;
+  }
+}
+
+/* FAQ section: "LOOKING FOR ANSWERS" — intro spans the top, then a two-column
+   row with the filterable accordion on the left and the "WE ARE HERE TO HELP"
+   link panel (light-grey card) on the right, matching the source. The three
+   wrappers are: [0] intro default content, [1] accordion-faq block, [2] help
+   panel default content. */
+@media (width >= 900px) {
+  main > .section.accordion-faq-container {
+    display: grid;
+    grid-template-columns: minmax(0, 67fr) minmax(0, 33fr);
+    column-gap: 40px;
+    align-items: start;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0 32px;
+  }
+
+  /* EDS wrappers are the section's direct grid children; clear their own
+     centering/max-width so they fill their grid cell. */
+  main > .section.accordion-faq-container > div {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Intro heading/paragraph spans both columns. */
+  main > .section.accordion-faq-container > .default-content-wrapper:first-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Accordion block occupies the left column, second row. */
+  main > .section.accordion-faq-container > .accordion-faq-wrapper {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* "WE ARE HERE TO HELP" panel occupies the right column, second row. */
+  main > .section.accordion-faq-container > .default-content-wrapper:last-child {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* "WE ARE HERE TO HELP" panel — light-grey card with plain bullet links. */
+main > .section.accordion-faq-container > .default-content-wrapper:last-child {
+  padding: 32px;
+  background-color: var(--light-color);
+}
+
+main > .section.accordion-faq-container > .default-content-wrapper:last-child ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+main > .section.accordion-faq-container > .default-content-wrapper:last-child li {
+  margin: 12px 0;
+}
+
+main > .section.accordion-faq-container > .default-content-wrapper:last-child li p {
+  display: inline;
+  margin: 0;
+}
+
+/* Drop the auto-decorated bullet paragraph (EDS renders a literal "•" cell). */
+main > .section.accordion-faq-container > .default-content-wrapper:last-child li > p:first-child {
+  display: none;
+}
+
+/* Plain teal-navy text links, not pill buttons. */
+main > .section.accordion-faq-container > .default-content-wrapper:last-child a.button:any-link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: var(--link-color);
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: left;
+  white-space: normal;
+}
+
+main > .section.accordion-faq-container > .default-content-wrapper:last-child a.button:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
 }

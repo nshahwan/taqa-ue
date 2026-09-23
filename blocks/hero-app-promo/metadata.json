@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-app-promo",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Promotional banner on a green/purple gradient background: taglines, subheading, large title, supporting text, an optional lifestyle image, and app-store CTA buttons.",
+  "contentPattern": "Optional image row plus a rich-text row with taglines, headings, text, and app-store CTA links.",
+  "usage": "App-download / product promotion panel.",
+  "options": [],
+  "memberVariantIds": ["hero-app-promo"]
+}

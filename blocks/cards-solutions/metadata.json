@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-solutions",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Light link cards in a responsive grid; each card shows a bold title and a corner arrow affordance. No images.",
+  "contentPattern": "Repeating card items, each with a title (and link). No image cell in the default no-images treatment.",
+  "usage": "Solution/service link cards on help-and-support pages.",
+  "options": [],
+  "memberVariantIds": ["cards-solutions"]
+}

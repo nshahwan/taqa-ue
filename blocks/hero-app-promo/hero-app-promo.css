@@ -1,0 +1,147 @@
+/* hero-app-promo — app-download promo panel on the brand green→teal gradient.
+   Values extracted from taqadistribution.com computed styles. */
+
+.hero-app-promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--app-promo-gradient);
+    color: #fff;
+    padding: 32px 24px;
+    overflow: hidden;
+}
+
+/* Lifestyle photo (man with phone + purple rings). Sits below the text on
+   mobile; moves beside it on desktop. */
+.hero-app-promo .hero-app-promo-media {
+    line-height: 0;
+}
+
+.hero-app-promo .hero-app-promo-media img,
+.hero-app-promo .hero-app-promo-media picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-app-promo .hero-app-promo-body {
+    max-width: 560px;
+}
+
+.hero-app-promo .hero-app-promo-body p,
+.hero-app-promo .hero-app-promo-body h5,
+.hero-app-promo .hero-app-promo-body h6 {
+    margin: 0;
+    color: #fff;
+}
+
+/* taglines: POWERING / COMMUNITIES */
+.hero-app-promo .hero-app-promo-body > p:nth-of-type(1),
+.hero-app-promo .hero-app-promo-body > p:nth-of-type(2) {
+    font-family: var(--body-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+/* gap between the tagline pair and the subheading */
+.hero-app-promo .hero-app-promo-body > p:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+
+/* subheading */
+.hero-app-promo .hero-app-promo-body h6 {
+    font-family: var(--heading-font-family);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+}
+
+/* title */
+.hero-app-promo .hero-app-promo-body h5 {
+    margin-top: 28px;
+    font-family: var(--heading-font-family);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.33px;
+    text-transform: uppercase;
+}
+
+/* supporting text ("Upgrade to a new experience") */
+.hero-app-promo .hero-app-promo-body > p:nth-of-type(3) {
+    margin-top: 30px;
+    font-family: var(--body-font-family);
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+/* app-store badges — two separate paragraphs placed side by side */
+/* stylelint-disable no-descending-specificity */
+.hero-app-promo .hero-app-promo-body > p:has(picture),
+.hero-app-promo .hero-app-promo-body > p:has(img) {
+    display: inline-block;
+    margin: 16px 10px 0 0;
+    line-height: 0;
+}
+
+.hero-app-promo .hero-app-promo-body > p:has(picture) + p:has(picture),
+.hero-app-promo .hero-app-promo-body > p:has(img) + p:has(img) {
+    margin-top: 0;
+}
+/* stylelint-enable no-descending-specificity */
+
+.hero-app-promo .hero-app-promo-body a {
+    display: inline-block;
+}
+
+.hero-app-promo .hero-app-promo-body picture img {
+    width: auto;
+    height: 42px;
+    object-fit: contain;
+}
+
+@media (width >= 900px) {
+    /* Source proportions: text column ~60%, lifestyle photo ~40%, photo
+       bottom-anchored and full-height. The image cell is first in the DOM, so
+       reorder with flex `order` to put text on the left. */
+    .hero-app-promo {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 0;
+        min-height: 460px;
+        padding: 56px 0 0 56px;
+    }
+
+    .hero-app-promo .hero-app-promo-body {
+        order: 1;
+        flex: 0 0 58%;
+        align-self: center;
+        padding-bottom: 56px;
+    }
+
+    .hero-app-promo .hero-app-promo-media {
+        order: 2;
+        flex: 1 1 42%;
+        align-self: stretch;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .hero-app-promo .hero-app-promo-media img,
+    .hero-app-promo .hero-app-promo-media picture {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom center;
+    }
+
+    .hero-app-promo .hero-app-promo-body h5 {
+        font-size: 33px;
+        line-height: 1.1;
+    }
+}
