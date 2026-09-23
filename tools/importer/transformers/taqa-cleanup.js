@@ -15,18 +15,22 @@ const TransformHook = { beforeTransform: 'beforeTransform', afterTransform: 'aft
  * stem so hash changes on the source don't break the match.
  */
 const DAM_BASE = '/content/dam/taqa-ue';
+// Keys are the source filename stems (as they appear in the origin URLs);
+// targets are the localized DAM paths. DAM paths MUST be lowercase — the Edge
+// Delivery pipeline normalizes /content/dam/... paths to lowercase, so mixed-case
+// targets would 404 at delivery.
 const IMAGE_STEM_MAP = {
-  HeaderImageResidential: `${DAM_BASE}/HeaderImageResidential.webp`,
-  AppStoreWhite: `${DAM_BASE}/AppStoreWhite.png`,
-  GooglePlayWhite: `${DAM_BASE}/GooglePlayWhite.png`,
-  airConditioner: `${DAM_BASE}/airConditioner.png`,
-  saveElectricity: `${DAM_BASE}/saveElectricity.png`,
-  efficientLighting: `${DAM_BASE}/efficientLighting.png`,
-  wiseAppliances: `${DAM_BASE}/wiseAppliances.png`,
-  saveWaterHome: `${DAM_BASE}/saveWaterHome.png`,
-  saveWaterOutside: `${DAM_BASE}/saveWaterOutside.png`,
-  waterUsage: `${DAM_BASE}/waterUsage.png`,
-  manPhone: `${DAM_BASE}/manPhone.webp`,
+  HeaderImageResidential: `${DAM_BASE}/headerimageresidential.webp`,
+  AppStoreWhite: `${DAM_BASE}/appstorewhite.png`,
+  GooglePlayWhite: `${DAM_BASE}/googleplaywhite.png`,
+  airConditioner: `${DAM_BASE}/airconditioner.png`,
+  saveElectricity: `${DAM_BASE}/saveelectricity.png`,
+  efficientLighting: `${DAM_BASE}/efficientlighting.png`,
+  wiseAppliances: `${DAM_BASE}/wiseappliances.png`,
+  saveWaterHome: `${DAM_BASE}/savewaterhome.png`,
+  saveWaterOutside: `${DAM_BASE}/savewateroutside.png`,
+  waterUsage: `${DAM_BASE}/waterusage.png`,
+  manPhone: `${DAM_BASE}/manphone.webp`,
 };
 
 function localizeImages(element) {

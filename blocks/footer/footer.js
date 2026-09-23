@@ -5,15 +5,15 @@ const DAM_BASE = '/content/dam/taqa-ue';
 
 // App-download badges (top band).
 const APPS = [
-  { alt: 'App Store', img: `${DAM_BASE}/AppStoreBlack.png`, href: 'https://apps.apple.com/in/app/addc/id1045166599' },
-  { alt: 'Play Store', img: `${DAM_BASE}/GooglePlayBlack.png`, href: 'https://play.google.com/store/apps/details?id=com.ADDC.addcApp' },
+  { alt: 'App Store', img: `${DAM_BASE}/appstoreblack.png`, href: 'https://apps.apple.com/in/app/addc/id1045166599' },
+  { alt: 'Play Store', img: `${DAM_BASE}/googleplayblack.png`, href: 'https://play.google.com/store/apps/details?id=com.ADDC.addcApp' },
 ];
 
 // Brand logos (middle band). The band is full-bleed: the teal "A TAQA GROUP
 // COMPANY" mark sits on white at the left, and the white "TAQA Distribution"
 // wordmark sits on a green→teal gradient panel that fills the rest.
-const LOGO_GROUP = { alt: 'A TAQA Group Company', img: `${DAM_BASE}/footerLogo.png` };
-const LOGO_WORDMARK = { alt: 'TAQA Distribution', img: `${DAM_BASE}/LogoWhite.png` };
+const LOGO_GROUP = { alt: 'A TAQA Group Company', img: `${DAM_BASE}/footerlogo.png` };
+const LOGO_WORDMARK = { alt: 'TAQA Distribution', img: `${DAM_BASE}/logowhite.png` };
 
 // Social channels — teal circle icons. Each SVG is inlined so it inherits the
 // brand teal via `fill` and needs no extra network request.
