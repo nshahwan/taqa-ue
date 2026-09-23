@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="canonical" href="https://main--taqa-ue--nshahwan.aem.live/help-and-support/certificates">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="https://main--taqa-ue--nshahwan.aem.live/help-and-support/certificates">
+    <meta property="og:image" content="https://main--taqa-ue--nshahwan.aem.live/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta property="og:image:secure_url" content="https://main--taqa-ue--nshahwan.aem.live/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="https://main--taqa-ue--nshahwan.aem.live/default-meta-image.png?width=1200&#x26;format=pjpg&#x26;optimize=medium">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&#x26;family=Roboto:wght@300;400;500;700&#x26;display=swap" rel="stylesheet">
+    <script src="/scripts/aem.js" type="module"></script>
+    <script src="/scripts/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

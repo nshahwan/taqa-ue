@@ -1,0 +1,70 @@
+{
+  "webPath": "/help-and-support/certificates",
+  "resourcePath": "/help-and-support/certificates.md",
+  "live": {
+    "url": "https://main--taqa-ue--nshahwan.aem.live/help-and-support/certificates",
+    "status": 200,
+    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/live/help-and-support/certificates.md",
+    "contentType": "text/plain; charset=utf-8",
+    "lastModified": "Wed, 23 Sep 2026 14:51:20 GMT",
+    "sourceLocation": "markup:https://author-p208666-e2179906.adobeaemcloud.com/ui/help-and-support/certificates#/aem/sites.html/content",
+    "sourceLastModified": "Wed, 23 Sep 2026 13:46:43 GMT",
+    "lastModifiedBy": "nshahwan@adobe.com",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "list",
+      "read",
+      "write"
+    ]
+  },
+  "preview": {
+    "url": "https://main--taqa-ue--nshahwan.aem.page/help-and-support/certificates",
+    "status": 200,
+    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/preview/help-and-support/certificates.md",
+    "contentType": "text/plain; charset=utf-8",
+    "lastModified": "Wed, 23 Sep 2026 16:05:42 GMT",
+    "sourceLocation": "markup:https://author-p208666-e2179906.adobeaemcloud.com/ui/help-and-support/certificates#/aem/sites.html/content",
+    "sourceLastModified": "Wed, 23 Sep 2026 15:40:48 GMT",
+    "lastModifiedBy": "nshahwan@adobe.com",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "list",
+      "read",
+      "write"
+    ]
+  },
+  "edit": {},
+  "code": {
+    "status": 404,
+    "codeBusId": "helix-code-bus/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "read",
+      "write"
+    ]
+  },
+  "links": {
+    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/help-and-support/certificates",
+    "logout": "https://admin.hlx.page/logout/nshahwan/taqa-ue/main"
+  },
+  "profile": {
+    "client_id": "experience-catalyst-prod",
+    "user_id": "06AD81A16A4CE1A00A495CFE@b344482a62dcc09b495e14.e",
+    "state": "{\"session\":\"https://ims-na1.adobelogin.com/ims/session/v1/NmI0MDE1ZjgtMWEzOS00NWFhLWI1OTItZmMzODZjMDg2MzI0LS0xQzEyODQxMzZBMEZEOTE5MEE0OTVFQTVAYWRvYmUuY29t\"}",
+    "as": "ims-na1",
+    "sid": "1789472121621_d58630cf-50c6-45d8-b764-6f3e9b663bd7_ue1",
+    "pba": "ORG,MedSecNoEV,LowSec",
+    "expires_in": "86400000",
+    "scope": "ab.manage,AdobeID,gnav,openid,org.read,read_organizations,session,aem.frontend.all,additional_info.ownerOrg,additional_info.projectedProductContext,account_cluster.read",
+    "created_at": "1790169567758",
+    "ttl": 76405,
+    "ownerOrg": "25D23BAA5E3AB7DB0A495EAC@AdobeOrg",
+    "email": "nshahwan@adobe.com"
+  }
+}

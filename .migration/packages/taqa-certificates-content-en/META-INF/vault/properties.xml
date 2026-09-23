@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>FileVault Package Definition</comment>
+    <entry key="name">taqa-certificates-content-en</entry>
+    <entry key="group">taqa-ue-migration</entry>
+    <entry key="version">1.1</entry>
+    <entry key="description">Migrated certificates page content at /content/taqa-ue/en (the delivery pipeline's content root).</entry>
+    <entry key="createdBy">migration</entry>
+</properties>

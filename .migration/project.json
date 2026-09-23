@@ -4,7 +4,8 @@
     "taqa-ue": {
       "previewOrg": "nshahwan",
       "previewSite": "taqa-ue",
-      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+      "baseUrl": "https://taqadistribution.com/addc/en-us/residential/help-and-support/certificates"
     }
   }
 }

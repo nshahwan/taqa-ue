@@ -1,0 +1,27 @@
+{
+  "webPath": "/help-and-support/transfer",
+  "resourcePath": "/help-and-support/transfer.md",
+  "preview": {
+    "url": "https://main--taqa-ue--nshahwan.aem.page/help-and-support/transfer",
+    "status": 200,
+    "contentBusId": "helix-content-bus/bb10f23d2e9afc103353880ae3cfe19a7cad24deab79aaaf31241580f31/preview/help-and-support/transfer.md",
+    "contentType": "text/plain; charset=utf-8",
+    "lastModified": "Wed, 23 Sep 2026 16:08:00 GMT",
+    "sourceLocation": "markup:https://author-p208666-e2179906.adobeaemcloud.com/ui/help-and-support/transfer#/aem/sites.html/content",
+    "sourceLastModified": "Wed, 23 Sep 2026 15:40:48 GMT",
+    "lastModifiedBy": "nshahwan@adobe.com",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "list",
+      "read",
+      "write"
+    ]
+  },
+  "links": {
+    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/help-and-support/transfer",
+    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/help-and-support/transfer",
+    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/help-and-support/transfer",
+    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/help-and-support/transfer"
+  }
+}
