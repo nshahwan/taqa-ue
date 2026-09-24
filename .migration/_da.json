@@ -1,0 +1,28 @@
+{
+  "webPath": "/content/dam/taqa-ue/airconditioner.png",
+  "resourcePath": "/content/dam/taqa-ue/airconditioner.png",
+  "preview": {
+    "url": "https://main--taqa-ue--nshahwan.aem.page/content/dam/taqa-ue/airconditioner.png",
+    "status": 200,
+    "contentBusId": "helix-content-bus/12af1846ec0306ab142f7353f2cca1c55d1e4427322e71ba7970d213669/preview/content/dam/taqa-ue/airconditioner.png",
+    "contentType": "text/plain; charset=utf-8",
+    "lastModified": "Wed, 23 Sep 2026 20:03:37 GMT",
+    "sourceLocation": "markup:*",
+    "sourceLastModified": "Wed, 23 Sep 2026 20:03:36 GMT",
+    "redirectLocation": "/content/dam/taqa-ue/media_137a60440c7b209f8c918b7d928fbb80af122b5f4.png",
+    "lastModifiedBy": "nshahwan@adobe.com",
+    "permissions": [
+      "delete",
+      "delete-forced",
+      "list",
+      "read",
+      "write"
+    ]
+  },
+  "links": {
+    "status": "https://admin.hlx.page/status/nshahwan/taqa-ue/main/content/dam/taqa-ue/airconditioner.png",
+    "preview": "https://admin.hlx.page/preview/nshahwan/taqa-ue/main/content/dam/taqa-ue/airconditioner.png",
+    "live": "https://admin.hlx.page/live/nshahwan/taqa-ue/main/content/dam/taqa-ue/airconditioner.png",
+    "code": "https://admin.hlx.page/code/nshahwan/taqa-ue/main/content/dam/taqa-ue/airconditioner.png"
+  }
+}
